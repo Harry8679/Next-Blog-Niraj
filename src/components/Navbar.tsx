@@ -1,6 +1,7 @@
 import { Input, NavbarBrand, NavbarContent, Navbar as NextUINav } from '@nextui-org/react';
 import Link from 'next/link';
 import React, { FC } from 'react';
+import ProfileOptions from './profile/ProfileOptions';
 
 interface Props {};
 
@@ -26,6 +27,7 @@ const Navbar: FC<Props> = (props) => {
           // startContent={<SearchIcon size={18} />}
           type="search"
         />
+        <ProfileOptions />
       </NavbarContent>
     </NextUINav>
   )
