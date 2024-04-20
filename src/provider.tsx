@@ -1,6 +1,7 @@
 'user client';
 import { NextUIProvider } from '@nextui-org/react';
 import React, { FC, ReactNode } from 'react';
+import Navbar from './components/Navbar';
 
 interface Props {
     children: ReactNode
@@ -9,6 +10,7 @@ interface Props {
 const Provider: FC<Props> = ({ children }) => {
   return (
     <NextUIProvider>
+      <Navbar />
       {children}
     </NextUIProvider>
   )
